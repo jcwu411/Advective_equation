@@ -101,7 +101,7 @@ if __name__ == '__main__':
     PSM = ode_solver.Ode(y0, tend_psm, dt, steps, debug=0)
     PSM.integrate(ode_scheme)
 
-    print("\n Method 3: Pseudo Spectral Method")
+    print("\n Method 3: Finite Volume Method")
     FV = ode_solver.Ode(y0, tend_fv, dt, steps, debug=0)
     FV.integrate(scheme="forward")
     print(FV.trajectory[-1, :])
